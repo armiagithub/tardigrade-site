@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tardigrade Exploration — Sir Armia</title>
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f5f5f5; color: #333; scroll-behavior: smooth; }
+    header, footer { background: #004d40; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+    nav a { color: #fff; margin-right: 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 2rem; max-width: 1000px; margin: auto; background: #fff; border-radius: 8px; }
+    h1, h2, h3 { margin-bottom: 0.5rem; color: #004d40; }
+    p, ul { margin-bottom: 1rem; }
+    ul { list-style-type: disc; margin-left: 1.5rem; }
+    img { max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 1rem; }
+    .section { padding: 2rem 0; border-bottom: 1px solid #ddd; }
+    .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    @media (max-width: 600px) { .section-grid { grid-template-columns: 1fr; } }
+    footer p { text-align: center; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tardigrade Exploration</h1>
+    <nav>
+      <a href="#taxonomy">Taxonomy</a>
+      <a href="#cryptobiosis">Cryptobiosis</a>
+      <a href="#molecular">Molecular</a>
+      <a href="#space">Space</a>
+      <a href="#genetics">Genetics</a>
+      <a href="#applications">Applications</a>
+      <a href="#neuroscience">Neuroscience</a>
+      <a href="#ecology">Ecology</a>
+      <a href="#lifecycle">Life Cycle</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Taxonomy Section -->
+    <section id="taxonomy" class="section">
+      <h2>Taxonomy & Morphology</h2>
+      <div class="section-grid">
+        <div>
+          <h3>Classification</h3>
+          <p>The phylum <em>Tardigrada</em> is divided into eight principal orders, each characterized by distinct morphological traits and ecological niches. Recent genomic data have clarified relationships, revealing cryptic speciation and lineage diversification correlated with habitat shifts.</p>
+          <p>Phylogenetic analyses using both mitochondrial and nuclear markers continue to refine our understanding of tardigrade evolution, uncovering deep splits dating back over 500 million years.</p>
+        </div>
+        <div><img src="images/taxonomy.jpg" alt="Phylogenetic tree of tardigrades"></div>
+        <div>
+          <h3>Anatomy</h3>
+          <p>Beyond basic segmentation, tardigrades possess specialized buccal apparatus for feeding—ranging from piercing stylets to filter-feeding mouths. Their muscular pharynx generates suction, enabling ingestion of fluids and cells.</p>
+          <p>Locomotion involves concerted movements of the legs and claws, allowing navigation through interstitial spaces in moss or sediment. Ultrastructural studies reveal sensory organs sensitive to vibration and chemical cues.</p>
+        </div>
+        <div><img src="images/morphology.jpg" alt="Microscopic morphology of tardigrade"></div>
+      </div>
+    </section>
+
+    <!-- Cryptobiosis Section -->
+    <section id="cryptobiosis" class="section">
+      <h2>Cryptobiosis</h2>
+      <ul>
+        <li><strong>Anhydrobiosis:</strong> Involves upregulation of Late Embryogenesis Abundant (LEA) proteins and antioxidant enzymes, preventing oxidative damage during desiccation.</li>
+        <li><strong>Cryobiosis:</strong> Vitrifying intracellular solutes form a glass-like state, minimizing ice crystal formation that would otherwise rupture membranes.</li>
+        <li><strong>Anoxybiosis:</strong> Alternate pathways allow limited anaerobic respiration, sustaining minimal ATP production under hypoxic stress.</li>
+        <li><strong>Osmobiosis:</strong> Accumulation of compatible solutes (e.g., glycine betaine) maintains osmotic balance in high-salinity surroundings.</li>
+      </ul>
+      <p>During tun state, tardigrades can survive for decades; revived specimens from museum slides demonstrate viability after more than 100 years in suspended animation.</p>
+      <img src="images/cryptobiosis.jpg" alt="Tardigrade in tun state">
+      <p>Advanced imaging techniques have visualized real-time structural changes, revealing reversible shrinkage of organelles and cytoplasmic densification.</p>
+    </section>
+
+    <!-- Molecular Section -->
+    <section id="molecular" class="section">
+      <h2>Molecular Adaptations</h2>
+      <div class="section-grid">
+        <div>
+          <h3>CAHS, MAHS & SAHS</h3>
+          <p>These proteins exhibit intrinsically disordered regions facilitating the formation of non-crystalline matrices. Experimental expression in yeast has conferred desiccation tolerance, validating functional mechanisms across taxa.</p>
+        </div>
+        <div><img src="images/CAHS.jpg" alt="3D model of CAHS protein"></div>
+        <div>
+          <h3>Dsup — Damage suppressor</h3>
+          <p>Beyond DNA binding, Dsup interacts with histones and DNA repair complexes, accelerating double-strand break repair via non-homologous end joining (NHEJ).</p>
+        </div>
+        <div><img src="images/Dsup.jpg" alt="Dsup protein bound to DNA"></div>
+      </div>
+      <p>Omics approaches reveal coordinated expression of stress-responsive genes, including heat-shock proteins and repair enzymes, orchestrated by regulatory networks unique to tardigrades.</p>
+    </section>
+
+    <!-- Space Section -->
+    <section id="space" class="section">
+      <h2>Space & Radiation Tolerance</h2>
+      <p>Europe’s 2007 TARDIS mission exposed dehydrated tardigrades to outer space conditions:</p>
+      <ul>
+        <li>Vacuum exposure for >10 days, with UV vacuum UV and cosmic radiation.</li>
+        <li>Subsequent rehydration showed 68% survival; survivors reproduced successfully.</li>
+      </ul>
+      <p>Later missions (e.g., NASA's BioSentinel) investigate DNA repair kinetics in microgravity, leveraging tardigrade cells.</p>
+      <img src="images/space_tolerance.jpg" alt="Tardigrade experiment in space">
+      <p>These insights guide development of radioprotective compounds for astronauts and deep-space missions.</p>
+    </section>
+
+    <!-- Genetics Section -->
+    <section id="genetics" class="section">
+      <h2>Genetic Insights</h2>
+      <ul>
+        <li><strong>Gene Duplication:</strong> Paralogs of Dsup and antioxidant enzymes suggest adaptive amplification for environmental stressors.</li>
+        <li><strong>Horizontal Gene Transfer:</strong> Integrations from bacterial endosymbionts equip tardigrades with novel metabolic pathways.</li>
+        <li><strong>Epigenetic Regulation:</strong> DNA methylation profiles fluctuate during tun induction, modulating gene expression rapidly.</li>
+      </ul>
+      <img src="images/genomics.jpg" alt="Graph of shared gene families">
+      <p>Comparative genomics across cryptobiotic species reveals convergent evolution of stress-response modules, offering targets for synthetic biology.</p>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="section">
+      <h2>Research Applications</h2>
+      <ul>
+        <li><strong>Pharmaceutical Stabilization:</strong> Incorporating CAHS proteins in formulations extends shelf life of biologics.</li>
+        <li><strong>Space Biosciences:</strong> Tardigrade-derived scaffolds support mammalian cell culture under simulated microgravity.</li>
+        <li><strong>Environmental Monitoring:</strong> Tardigrade community shifts serve as bioindicators for ecosystem health.</li>
+      </ul>
+      <img src="images/applications.jpg" alt="Tardigrade-inspired biomaterials">
+      <p>Integration of tardigrade traits into agricultural crops through gene editing aims to boost drought and salinity resistance.</p>
+    </section>
+
+    <!-- Neuroscience Section -->
+    <section id="neuroscience" class="section">
+      <h2>Neuroscience & Development</h2>
+      <p>High-resolution fluorescence microscopy tracks neuronal wiring during larval stages, revealing rapid circuit maturation within 48 hours post-hatch.</p>
+      <ul>
+        <li><strong>Optogenetics:</strong> Expression of light-sensitive ion channels allows manipulation of behavior in cyst states.</li>
+        <li><strong>Regeneration:</strong> Some species regenerate damaged neural tissues, providing models for repair mechanisms.</li>
+      </ul>
+      <img src="images/neuroscience.jpg" alt="High-resolution neural imaging">
+      <p>Single-cell transcriptomics defines cell-type diversity, mapping homologous cell types across Ecdysozoa.</p>
+    </section>
+
+    <!-- Ecology Section -->
+    <section id="ecology" class="section">
+      <h2>Ecology & Distribution</h2>
+      <p>Tardigrade diversity peaks in temperate regions, but extreme specialists occupy polar, desert, and deep-sea habitats. Community composition reflects moisture availability and substrate type.</p>
+      <ul>
+        <li><strong>Moss & Lichen Habitats:</strong> Host microfaunal networks sustaining tardigrade populations.</li>
+        <li><strong>Freshwater Assemblages:</strong> Seasonal dynamics influence species turnover rates.</li>
+        <li><strong>Marine Zonation:</strong> Depth gradients correlate with morphological adaptations.</li>
+      </ul>
+      <img src="images/ecology.jpg" alt="Moss habitat with tardigrades">
+      <p>eDNA and metabarcoding reveal cryptic species and refine conservation priorities for microfauna-rich ecosystems.</p>
+    </section>
+
+    <!-- Life Cycle Section -->
+    <section id="lifecycle" class="section">
+      <h2>Life Cycle & Reproduction</h2>
+      <ul>
+        <li><strong>Egg Morphology:</strong> Eggs exhibit species-specific ornamentation, often used in taxonomic keys.</li>
+        <li><strong>Developmental Timing:</strong> At optimal temperatures, hatching occurs within 5–10 days; extremes extend development up to several weeks.</li>
+        <li><strong>Diapause:</strong> Some species enter egg diapause, pausing embryogenesis until favorable conditions return.</li>
+        <li><strong>Reproductive Strategies:</strong> Sexual and asexual (parthenogenetic) reproduction adapt to population density and habitat stability.</li>
+      </ul>
+      <p>Longevity studies report lifespans exceeding two years in laboratory conditions, with tun cycles extending potential lifespan by orders of magnitude.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Tardigrade Exploration. All rights reserved.</p>
+  </footer>
+</body>
+</html>
